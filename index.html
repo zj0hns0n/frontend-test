@@ -3,33 +3,46 @@
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
     <header class="header">
-        <div class="logo-wrapper"></div>
+        <div class="logo-wrapper">
+            <img src="images/logo.png" alt="UI/UX Test Logo">
+        </div>
         <div class="menu-wrapper">
             <nav>
-                <a href="/">Blog</a>
-                <a href="/">Contact</a>
-                <a href="/">More</a>
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">More</a></li>
+                </ul>
             </nav>
         </div>
     </header>
     <section class="content">
-        <div class="outline-box box"></div>
-        <div class="solid-box box"></div>
-        <div class="diamond-box box"></div>
-        <div class="spinning-box box"></div>
-        <button>Make invisible</button>
+        <div class="grid">
+            <div class="row">
+                <div class="outline-box box"></div>
+                <div class="solid-box box"></div>
+            </div>
+            <div class="row">
+                <div class="diamond-box box"></div>
+                <div id="spinBox" class="spinning-box box"></div>
+            </div>
+            <div class="row">
+                <button id="spinBtn" onclick="spinner()">Stop Spinning</button>
+            </div>
+        </div>
     </section>
     <footer class="footer">
         <div class="footer-links">
             <ul>
-                <li>Blog</li>
-                <li>Contact Us</li>
-                <li>Email: test@quarant-8.com</li>
-                <li>555-1234</li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li>Email: <a href="mailto:test@quadrant-8.com">test@quadrant-8.com</a></li>
+                <li><a href="tel:+14438789030">555-1234</a></li>
             </ul>
         </div>
     </footer>
